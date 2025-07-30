@@ -33,11 +33,13 @@ ul:not(article ul) {
   list-style: none;
 }
 
+/*
 menu,
 ol,
 ul {
   padding-left: 0;
 }
+*/
 
 article ol,
 article ul {
@@ -438,7 +440,13 @@ nav {
   width: auto;
 }
 
-#hizmetlerimiz ul,
-#istanbul-projeleri details ul {
+/* ------------------------------------------------------------------------ */
+/* ABOUT PAGE LIST LEFT PADDING ------------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+#hizmet-yaklasimi,
+#istanbul-projeleri-1,
+#istanbul-projeleri-2,
+#istanbul-projeleri-3 {
   padding-left: 2rem;
 }
