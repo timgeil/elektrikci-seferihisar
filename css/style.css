@@ -437,3 +437,8 @@ nav {
   height: clamp(75px, 10vw, 90px); /* mobilde makul yükseklik  */
   width: auto;
 }
+
+#hizmetlerimiz ul,
+#istanbul-projeleri details ul {
+  padding-left: 2rem;
+}
