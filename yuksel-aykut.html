@@ -45,31 +45,25 @@
   <!-- HEADER & NAVIGATION ------------------------------------------------ -->
   <!-- -------------------------------------------------------------------- -->
   <header class="container">
-    <nav>
+    <nav class="navbar-inline">
 
       <!-- Logo -->
       <a href="/">
-        <img src="img/brand/logo-transparent-seferihisar-elektrikci-yuksel.svg" alt="Güven Elektrikçi Logo" height="90"
-          width="240" />
+        <img src="img/brand/logo-transparent-seferihisar-elektrikci-yuksel.svg"
+          alt="Seferihisar Elektrikçi Yüksel Aykut Logo" height="90" width="240" class="logo" />
       </a>
 
       <!-- Header Menu -->
-      <ul>
-
-        <!-- Toggle Hamburger Menu Icon (visible only tablet & mobile) -->
-        <li>
-          <details class="dropdown">
-            <summary role="button" class="primary">MENÜ</summary>
-            <ul dir="rtl">
-              <li><a href="/" class="secondary">Anasayfa</a></li>
-              <li><a href="/yuksel-aykut" aria-current="page" class="secondary">Yüksel Aykut</a></li>
-              <li><a href="/#bolgeler" class="secondary">Bölgeler</a></li>
-              <li><a href="/#hizmetlerimiz" class="secondary">Hizmetlerimiz</a></li>
-              <li><a href="/iletisim" class="secondary">İletişim</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
+      <details class="dropdown">
+        <summary role="button" class="primary nowrap">MENÜ</summary>
+        <ul dir="rtl">
+          <li><a href="/" class="secondary">Anasayfa</a></li>
+          <li><a href="/yuksel-aykut" class="secondary" aria-current="page">Yüksel Aykut</a></li>
+          <li><a href="/#bolgeler" class="secondary">Bölgeler</a></li>
+          <li><a href="/#hizmetlerimiz" class="secondary">Hizmetlerimiz</a></li>
+          <li><a href="/iletisim" class="secondary">İletişim</a></li>
+        </ul>
+      </details>
     </nav>
   </header>
 
@@ -102,54 +96,56 @@
     <!-- -------------------------------------------------------------------- -->
     <!-- HİZMETLER & DENEYİM ------------------------------------------------ -->
     <!-- -------------------------------------------------------------------- -->
-    <section id="hizmetlerimiz" class="container">
-      <h2>Hizmetler</h2>
-      <table role="grid">
-        <thead>
-          <tr>
-            <th>Kategori</th>
-            <th>Açıklama</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Elektrik İç Tesisat</strong></td>
-            <td>Elektrik İç Tesisat Yönetmeliği standartlarına uygun <em>konvansiyonel</em> uygulamalar &mdash; marka
-              bağımsız çözüm.</td>
-          </tr>
-          <tr>
-            <td><strong>Akıllı Ev Sistemleri</strong></td>
-            <td>Avrupa standartlarında <abbr title="Konnex">KNX</abbr> kablolu protokol ile akıllı ev projeleri.</td>
-          </tr>
-          <tr>
-            <td><strong>Görüntüleme Sistemleri</strong></td>
-            <td>Analog/IP kamera, apartman konuşma ve uydu üzerinden görüntüleme çözümleri.</td>
-          </tr>
-          <tr>
-            <td><strong>Alarm &amp; İhbar</strong></td>
-            <td>Kablolu yangın ihbar ve hırsız alarm sistemleri.</td>
-          </tr>
-          <tr>
-            <td><strong>Network (DATA) Altyapı</strong></td>
-            <td>Sunucu dâhil fiber‑optik ve bakır kablolama ile kurumsal ağ altyapıları.</td>
-          </tr>
-          <tr>
-            <td><strong>Malzeme Tedariği</strong></td>
-            <td>Tüm markalar; acil durumlarda aynı gün &mdash; en geç 2. iş gününde teslimat.</td>
-          </tr>
-          <tr>
-            <td><strong>İşçilik Garantisi</strong></td>
-            <td>Yapılacak işe göre <strong>6&nbsp;ay&nbsp;&ndash;&nbsp;1&nbsp;yıl</strong> işçilik garantisi (özel
-              işçiliklerde kapsam değişebilir).</td>
-          </tr>
-        </tbody>
-      </table>
+    <section id="hizmetlerimiz" class="container padding-top-2">
+      <h2 class="padding-vertical-2">Hizmetler</h2>
+      <div class="overflow-auto">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Kategori</th>
+              <th>Açıklama</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Elektrik İç Tesisat</strong></td>
+              <td>Elektrik İç Tesisat Yönetmeliği standartlarına uygun <em>konvansiyonel</em> uygulamalar &mdash; marka
+                bağımsız çözüm.</td>
+            </tr>
+            <tr>
+              <td><strong>Akıllı Ev Sistemleri</strong></td>
+              <td>Avrupa standartlarında <abbr title="Konnex">KNX</abbr> kablolu protokol ile akıllı ev projeleri.</td>
+            </tr>
+            <tr>
+              <td><strong>Görüntüleme Sistemleri</strong></td>
+              <td>Analog/IP kamera, apartman konuşma ve uydu üzerinden görüntüleme çözümleri.</td>
+            </tr>
+            <tr>
+              <td><strong>Alarm &amp; İhbar</strong></td>
+              <td>Kablolu yangın ihbar ve hırsız alarm sistemleri.</td>
+            </tr>
+            <tr>
+              <td><strong>Network (DATA) Altyapı</strong></td>
+              <td>Sunucu dâhil fiber‑optik ve bakır kablolama ile kurumsal ağ altyapıları.</td>
+            </tr>
+            <tr>
+              <td><strong>Malzeme Tedariği</strong></td>
+              <td>Tüm markalar; acil durumlarda aynı gün &mdash; en geç 2. iş gününde teslimat.</td>
+            </tr>
+            <tr>
+              <td><strong>İşçilik Garantisi</strong></td>
+              <td>Yapılacak işe göre <strong>6&nbsp;ay&nbsp;&ndash;&nbsp;1&nbsp;yıl</strong> işçilik garantisi (özel
+                işçiliklerde kapsam değişebilir).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <h3>Hizmet Yaklaşımımız</h3>
-      <ul>
-        <li><strong>Öncelik:</strong> İnsan güvenliği, ardından fiyat‑performans dengesi.</li>
+      <h3 class="padding-top-4 padding-bottom-2">Hizmet Yaklaşımı</h3>
+      <ul class="padding-left-1">
+        <li><strong>Önce Güvenlik:</strong> İnsan güvenliği ana öncelik, ardından fiyat‑performans dengesi.</li>
         <li><strong>Referans Odaklı:</strong> Tüm projeler geçmiş müşteri memnuniyeti ile şekillenir.</li>
-        <li><strong>Bölge:</strong> Urla, Güzelbahçe, Yelki, Gümüldür ve çevresi (Çeşme hariç).</li>
+        <li><strong>Bölge:</strong> Seferihisar, Urla, Güzelbahçe, Yelki, Gümüldür ve çevresi (Çeşme hariç).</li>
       </ul>
     </section>
 
@@ -157,65 +153,75 @@
     <!-- GÜNCEL PROJELER ---------------------------------------------------- -->
     <!-- -------------------------------------------------------------------- -->
     <section class="container">
-      <h2>Seçili Projeler <small>(2023&nbsp;&ndash;&nbsp;2025)</small></h2>
-      <table role="grid">
-        <thead>
-          <tr>
-            <th>Proje</th>
-            <th>Yer / Kapsam</th>
-            <th>Durum</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Denizyay Konut Projesi</td>
-            <td>Seferihisar, İzmir &mdash; Blok&nbsp;A: 9 konut • Blok&nbsp;B: 6 konut + 3 ticari</td>
-            <td><span class="pico-background-green-600 pico-color-white"
-                style="padding:0.1rem 0.4rem;border-radius:4px;">Tamamlandı</span></td>
-          </tr>
-          <tr>
-            <td>KNX Akıllı Ev Projesi</td>
-            <td>Bademler, Urla &mdash; Müstakil 4&nbsp;+&nbsp;1 dubleks</td>
-            <td><span class="pico-background-amber-600 pico-color-white"
-                style="padding:0.1rem 0.4rem;border-radius:4px;">Devam Ediyor</span></td>
-          </tr>
-          <tr>
-            <td>Ergün İnşaat</td>
-            <td>Güzelbahçe/Yelki &mdash; 16 konut + 2 ticari, KNX tabanlı</td>
-            <td><span class="pico-background-amber-600 pico-color-white"
-                style="padding:0.1rem 0.4rem;border-radius:4px;">Devam Ediyor</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 class="padding-top-4 padding-bottom-2">İzmir Projeleri <small>(2023 &mdash; 2025)</small></h2>
+      <div class="overflow-auto">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Proje</th>
+              <th>Yer / Kapsam</th>
+              <th>Durum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="nowrap">Denizyay Konut Projesi</td>
+              <td class="nowrap">Seferihisar Merkez, İzmir <br><small class="secondary nowrap">&mdash; Blok A: 9 Konut
+                  <br>&mdash;
+                  Blok
+                  B:
+                  6 Konut + 3 Ticari</small>
+              </td>
+              <td><span class="pico-background-green-650 pico-color-white nowrap"
+                  style="padding:0.25rem 0.5rem;border-radius:4px;">Yakın Zamanda Tamamlandı</span></td>
+            </tr>
+            <tr>
+              <td>Kablolu KNX Akıllı Ev Projesi</td>
+              <td>Urla Bademler, İzmir <br><small class="secondary nowrap">&mdash; Müstakil 4+1 Dubleks</small></td>
+              <td><span class="pico-background-yellow-100 nowrap"
+                  style="padding:0.25rem 0.5rem;border-radius:4px;">Şuanda Devam Ediyor</span></td>
+            </tr>
+            <tr>
+              <td>Ergün İnşaat</td>
+              <td>Güzelbahçe Yelki, İzmir <br><small class="secondary nowrap">&mdash; 16 Konut + 2 Ticari, <br>&mdash;
+                  Kablolu
+                  KNX Tabanlı
+              </td>
+              <td><span class="pico-background-yellow-100 nowrap"
+                  style="padding:0.25rem 0.5rem;border-radius:4px;">Şuanda Devam Ediyor</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <!-- -------------------------------------------------------------------- -->
     <!-- ÖNCEKİ PROJELER (ACCORDION) --------------------------------------- -->
     <!-- -------------------------------------------------------------------- -->
     <section class="container">
-      <h2>Önceki Projeler <small>(2008&nbsp;&ndash;&nbsp;2023)</small></h2>
-      <details>
-        <summary class="secondary">Acar Yapı İnşaat (İstanbul)</summary>
-        <ul>
-          <li>Beykonakları, Beylikdüzü — 77 daire</li>
-          <li>LifePlus Şerifali, Ümraniye — 45 daire</li>
+      <h2 class="padding-top-4 padding-bottom-2">İstanbul Projeleri <small>(2008&nbsp;&ndash;&nbsp;2023)</small></h2>
+      <details style="border: #ccc 1px solid; border-radius: 4px;">
+        <summary role="button" class="contrast">Acar Yapı İnşaat İstanbul</summary>
+        <ul class="padding-left-2">
+          <li>Beykonakları, Beylikdüzü — 77 Daire</li>
+          <li>LifePlus Şerifali, Ümraniye — 45 Daire</li>
           <li>Acar Plaza, Ümraniye — Ticari</li>
-          <li>New Loca İstanbul, Ümraniye/Çakmak — 233 daire + 15 ticari</li>
+          <li>New Loca İstanbul, Ümraniye/Çakmak — 233 Daire + 15 Ticari</li>
         </ul>
       </details>
-      <details>
-        <summary class="secondary">ER‑AY Elektrik (Kurucu Ortak, 2016‑2023)</summary>
-        <ul>
-          <li>Mavrova Residence, Küçükçekmece — 60 daire + 4 ticari</li>
-          <li>Sarıgül Konakları — 48 daire</li>
-          <li>Ötüken Residence — 63 daire</li>
-        </ul>
+      <details style="border: #ccc 1px solid; border-radius: 4px;">
+        <summary role="button" class="contrast">ER‑AY Elektrik <small>(Kurucu Ortak, 2016‑2023)</small></summary>
+        <ul class="padding-left-2">
+          <li>Mavrova Residence, Küçükçekmece — 60 Daire + 4 Ticari</li>
+          <li>Sarıgül Konakları — 48 Daire</li>
+          <li>Ötüken Residence — 63 Daire</li>
+        </ul class="padding-left-1">
       </details>
-      <details>
-        <summary class="secondary">Kare Mimarlık &amp; Mühendislik</summary>
-        <ul>
-          <li>Address Güneşi, Güneşli — 80 konut</li>
-          <li>Koçak Konutları, Mahmutbey — 45 konut</li>
+      <details style="border: #ccc 1px solid; border-radius: 4px;">
+        <summary role="button" class="contrast">Kare Mimarlık &amp; Mühendislik</summary>
+        <ul class="padding-left-2">
+          <li>Address Güneşi, Güneşli — 80 Konut</li>
+          <li>Koçak Konutları, Mahmutbey — 45 Konut</li>
         </ul>
       </details>
     </section>
@@ -223,8 +229,8 @@
     <!-- -------------------------------------------------------------------- -->
     <!-- MESLEKİ ARKA PLAN -------------------------------------------------- -->
     <!-- -------------------------------------------------------------------- -->
-    <section class="container">
-      <h2>Mesleki Arka Plan</h2>
+    <section class="container padding-vertical-4">
+      <h2 class="padding-bottom-2">Mesleki Arka Plan</h2>
       <p>1998’de İstanbul’da başladığım meslek hayatımda, 2006’ya kadar çeşitli firmalarda farklı projelerde çalışarak
         deneyim kazandım. 2008’den itibaren sahada <strong>bağımsız</strong> olarak, “önce etik ve dürüstlük” ilkesini
         benimseyerek hizmet vermeye devam ettim.</p>
@@ -284,14 +290,14 @@
     <!-- FOOTER ------------------------------------------------------------- -->
     <!-- -------------------------------------------------------------------- -->
     <section>
-      <h2 class="padding-bottom-2">Seferihisar Elektrikçi Yüksel</h2>
+      <h2 class="padding-bottom-2">Seferihisar Elektrikçi Yüksel Aykut</h2>
       <a href="/">
         <img src="img/brand/logo-transparent-seferihisar-elektrikci-yuksel.svg" alt="Seferihisar Elektrikçi Yüksel Logo"
           height="90" width="240" />
       </a>
     </section>
     <section>
-      <p>Seferihisar’da Elektrikçi Yüksel olarak önceliğimiz daima güvenilir ve kaliteli hizmet sunmak.
+      <p>Seferihisar’da Elektrikçi Yüksel Aykut olarak önceliğimiz daima güvenilir ve kaliteli hizmet sunmak.
       </p>
       <p>
         Teknolojiyi
@@ -301,8 +307,8 @@
     </section>
     <section>
       <hr>
-      <a href="https://www.youtube.com/@seferihisaryukselusta" title="Yüksel Usta Akıllı Ev Sistemleri YouTube"
-        class="secondary" target="_blank">Yüksel Usta YouTube</a>
+      <a href="https://www.youtube.com/@seferihisaryukselusta" title="Yüksel Aykut - Akıllı Ev Sistemleri"
+        class="secondary" target="_blank">Yüksel Aykut YouTube</a>
       <hr>
       <a href="tel:05538665764" title="Telefon" class="secondary">+90 553 866 5764</a>
       <hr>
@@ -317,7 +323,7 @@
   <div class="text-align-center padding-vertical-1">
     <small>© <span id="year"></span>
       Seferihisar
-      Elektrikçi Yüksel - Tüm hakları saklıdır</small>
+      Elektrikçi Yüksel Aykut - Tüm hakları saklıdır</small>
   </div>
 
   <!-- -------------------------------------------------------------------- -->
