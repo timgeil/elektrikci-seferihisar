@@ -33,13 +33,11 @@ ul:not(article ul) {
   list-style: none;
 }
 
-/*
 menu,
 ol,
 ul {
   padding-left: 0;
 }
-*/
 
 article ol,
 article ul {
@@ -79,29 +77,15 @@ summary,
 }
 
 /* ------------------------------------------------------------------------ */
-/* Navigation Bar --------------------------------------------------------- */
-/* ------------------------------------------------------------------------ */
-
-nav {
-  padding: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (max-width: 576px) {
-  nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-/* ------------------------------------------------------------------------ */
 /* UTILITY CLASSES -------------------------------------------------------- */
 /* ------------------------------------------------------------------------ */
 
 .text-align-center {
   text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
 }
 
 .nowrap {
@@ -128,6 +112,10 @@ nav {
 .flex-direction-row {
   display: flex;
   flex-direction: row;
+}
+
+.gap-05 {
+  gap: 0.5rem;
 }
 
 .gap-1 {
@@ -268,6 +256,18 @@ nav {
   list-style-type: none; /* Removes default list style */
 }
 
+.list-itemsgap-05 li {
+  padding-bottom: 0.5rem;
+}
+
+.list-itemsgap-1 li {
+  padding-bottom: 1rem;
+}
+
+.list-itemsgap-2 li {
+  padding-bottom: 2rem;
+}
+
 /* ------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------ */
@@ -292,9 +292,9 @@ nav {
   width: 100%;
 }
 
-/* ===== FLEX-3 CUSTOM UTILITY CLASS ================================== */
-.flex-3 {
-  --gap: 1.5rem;
+/* ===== FLEX-123 CUSTOM UTILITY CLAS - MOBILE:1 / TABLET:2 / DESKTOP:3 ================ */
+.flex-123 {
+  --gap: 2rem;
   --columns: 1; /* Defult: 1 column (Mobile) */
   display: flex;
   flex-wrap: wrap;
@@ -304,7 +304,7 @@ nav {
 }
 
 /* Flex children */
-.flex-3 > * {
+.flex-123 > * {
   box-sizing: border-box;
   flex: 0 1 calc((100% - (var(--gap) * (var(--columns) - 1))) / var(--columns));
   max-width: 100%;
@@ -312,14 +312,46 @@ nav {
 
 /* ≥576 px → 2 columns (tablet and up) */
 @media (min-width: 576px) {
-  .flex-3 {
+  .flex-123 {
     --columns: 2;
   }
 }
 
 /* ≥1024 px → 3 columns (desktop and up) */
 @media (min-width: 1024px) {
-  .flex-3 {
+  .flex-123 {
+    --columns: 3;
+  }
+}
+
+/* ===== FLEX-113 CUSTOM UTILITY CLAS - MOBILE:1 / TABLET:1 / DESKTOP:3 ================ */
+.flex-113 {
+  --gap: 2rem;
+  --columns: 1; /* Defult: 1 column (Mobile) */
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  justify-content: center; /* Center children horizontally */
+  /*align-items: stretch;  Stretch children to the same height */
+}
+
+/* Flex children */
+.flex-113 > * {
+  box-sizing: border-box;
+  flex: 0 1 calc((100% - (var(--gap) * (var(--columns) - 1))) / var(--columns));
+  max-width: 100%;
+}
+
+/* ≥576 px → 2 columns (tablet and up) */
+@media (min-width: 576px) {
+  .flex-113 {
+    --columns: 1;
+  }
+}
+
+/* ≥1024 px → 3 columns (desktop and up) */
+@media (min-width: 1024px) {
+  .flex-113 {
     --columns: 3;
   }
 }
@@ -441,6 +473,15 @@ nav {
 }
 
 /* ------------------------------------------------------------------------ */
+/* BREADCRUMB FLOAT LEFT --------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+nav[aria-label="breadcrumb"] {
+  align-items: start;
+  justify-content: start;
+}
+
+/* ------------------------------------------------------------------------ */
 /* ABOUT PAGE LIST LEFT PADDING ------------------------------------------- */
 /* ------------------------------------------------------------------------ */
 
@@ -449,4 +490,14 @@ nav {
 #istanbul-projeleri-2,
 #istanbul-projeleri-3 {
   padding-left: 2rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* FOOTER MIDDLE COLUMN LEFT PADDING -------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+@media (min-width: 1024px) {
+  #footer-services {
+    padding-left: 4rem;
+  }
 }
